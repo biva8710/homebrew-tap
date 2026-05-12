@@ -5,21 +5,21 @@
 class Sshm < Formula
   desc "SSH key and config manager"
   homepage "https://github.com/biva8710/my-go-bin"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.0/sshm_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8133ce941f57cab986f3438a7ce9b59c361808cc40538cb5efa5702df43611a2"
+      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.1/sshm_0.1.1_darwin_amd64.tar.gz"
+      sha256 "19ec4780863c942447ce60059346df6062b753c2635b17f39933db7905ac5293"
 
       define_method(:install) do
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.0/sshm_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2d9a957b8011cd6440fcd87ab7fef4e7db341a453b8862536f23213f4b1b536b"
+      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.1/sshm_0.1.1_darwin_arm64.tar.gz"
+      sha256 "29a175e55cc98c7e51764b02301e09db12636a7a7c6f7e47224239d098bfed43"
 
       define_method(:install) do
         bin.install "sshm"
@@ -29,15 +29,15 @@ class Sshm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.0/sshm_0.1.0_linux_amd64.tar.gz"
-      sha256 "f5b2c1a17f5ae68b5e031c2ea803796269873218ec54b597ea4e1f364eabd4f1"
+      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.1/sshm_0.1.1_linux_amd64.tar.gz"
+      sha256 "a0e0131edd771fe1ae6fc7e7646d8ac9737389f4551c05d312c6fb5bb7013f62"
       define_method(:install) do
         bin.install "sshm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.0/sshm_0.1.0_linux_arm64.tar.gz"
-      sha256 "5d11e5320fac1b0af650b0011bdd839df4ff2259e7c20d2d11c9aa2a8517945d"
+      url "https://github.com/biva8710/my-go-bin/releases/download/v0.1.1/sshm_0.1.1_linux_arm64.tar.gz"
+      sha256 "344b14c6cb63da7c2b5a27b7508687969cdfcde2558f026ed86baf5dd61142c4"
       define_method(:install) do
         bin.install "sshm"
       end
